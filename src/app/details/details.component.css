@@ -161,7 +161,7 @@
   
   .team-member {
       margin-bottom: 50px;
-      text-align: center; }
+      text-align: left; }
   .team-member img {
       width: 250px;
       height: 250px;
@@ -202,4 +202,13 @@
     color: #6ab04c;
     block-size: .3vw;
   }
-  
+  p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+  .redText {
+    color: red;
+  }
+  .ui-tabview-selected {
+    background-color: #7d964d !important;
+}
