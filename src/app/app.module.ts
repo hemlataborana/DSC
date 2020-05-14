@@ -11,6 +11,7 @@ import { DetailsComponent } from './details/details.component';
 import { TopbuttonComponent } from './topbutton/topbutton.component';
 import { ApplyComponent } from './apply/apply.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     DetailsComponent,
     TopbuttonComponent,
     ApplyComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     TabViewModule,
