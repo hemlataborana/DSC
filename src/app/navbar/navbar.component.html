@@ -3,22 +3,44 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <nav class="navbar  navbar-expand-lg navbar-light navbar-fixed-top">
   <div class="container-fluid" style="background-color: black">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true" style="color: #6ab04c;" > 
+    <button type="button" class="navbar-toggle" (click)="toggleNavbar()" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true" style="color: #6ab04c;" > 
       <span class="sr-only">Toggle navigation</span>
-      Menu
+ 
       <i class="fa fa-bars" aria-hidden="true"></i>
     </button>
+   
     <div class="navbar-header">
       <a class="navbar-brand" style="color: #6ab04c;" href="#">Rudra Enterprises</a>
     </div>
-    <ul class="nav navbar-nav">
+    <!-- <ul class="nav navbar-nav">
       <li><a class="nav-link" href="#">Home</a></li>
       
       <li ><a class="nav-link" href="#about-section">About</a></li>
      
-      <li><a class="nav-link" href="#pricing">Pricing</a></li>
+      <li><a class="nav-link" href="#pricing">About</a></li>
       <li><a class="nav-link" href="#applysection">Apply</a></li>
       <li><a class="nav-link" href="#contact">Contact Us</a></li>
+    </ul> -->
+  
+  <div class="collapse navbar-collapse" [ngClass]="{ in: isOpen }" style="color: #6ab04c;">
+    <ul class="nav navbar-nav">
+      <li class="active">
+        <a href="#about-section">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li (click)="toggleNavbar()">
+        <a href="#pricing">pricing</a>
+      </li>
+      
+    </ul>
+    
+    <ul class="nav navbar-nav ">
+      <li (click)="toggleNavbar()">
+        <a href="#applysection">Apply</a>
+      </li>
+      <li (click)="toggleNavbar()">
+        <a href="#contact">Contact Us</a>
+      </li>
     </ul>
   </div>
+</div>
 </nav>
